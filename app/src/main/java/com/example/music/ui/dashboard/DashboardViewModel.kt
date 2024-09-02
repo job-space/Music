@@ -1,0 +1,13 @@
+package com.example.music.ui.dashboard
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+
+class DashboardViewModel : ViewModel() {
+
+    private val _text = MutableLiveData<String>().apply {
+        value = "Recommendations will be available soon"
+    }
+    val text: LiveData<String> = _text
+}
